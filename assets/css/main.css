@@ -324,7 +324,7 @@ br.clear {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-items: stretch;
+  align-items: center;
 }
 .row > * {
   box-sizing: border-box;
@@ -508,7 +508,7 @@ br.clear {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
   }
   .row > * {
     box-sizing: border-box;
@@ -693,7 +693,7 @@ br.clear {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
   }
   .row > * {
     box-sizing: border-box;
@@ -878,7 +878,7 @@ br.clear {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
   }
   .row > * {
     box-sizing: border-box;
@@ -1063,7 +1063,7 @@ br.clear {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
   }
   .row > * {
     box-sizing: border-box;
@@ -1261,7 +1261,7 @@ article:last-child {
 .image {
   transition: opacity 0.25s ease-in-out;
   display: inline-block;
-  border: solid 6px #ebebeb !important;
+  border: solid 6px #ed786a !important;
 }
 .image:hover {
   opacity: 0.9;
@@ -1784,8 +1784,9 @@ button.alt:active,
   box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
   position: relative;
   text-transform: uppercase;
-  background: url("../../images/farmland.jpg");
-  background-size: cover;
+  background: url("../../images/bulls-headbutting.jpg");
+  background-repeat: repeat;
+  background-size: auto;
   padding: 10em 0;
 }
 #banner p {
