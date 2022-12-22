@@ -1,0 +1,9 @@
+/* 1. Garamond (serif / classic / smart)
+2. Bodoni (serif / „premium“ / elegant)
+3. Century Expanded (serif / readable!)
+4. Futura (sans-serif / geometric / functional) 
+5. Times New Roman ... ... no comment :D
+6. Helvetica (sans-serif / often used)  */
+body {
+  font-family: Futura;
+}
