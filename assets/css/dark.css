@@ -1,0 +1,48 @@
+/*
+reference:
+https://www.reddit.com/r/webdev/comments/kfwydp/how_to_add_dark_mode_to_your_website_in_5_minutes/
+
+https://www.oakharborwebdesigns.com/blog/2020/december/how-to-add-dark-mode-to-a-website#blog-post
+
+CSS for Dark Mode Toggle
+
+Copy and paste this code into it's own dark.css file. Keep all you dark mode
+styles there, and make sure when you link to this sheet in your html head,
+make it the bottom css link tag so it overrides all other styles.
+At the bottom, that's where you start to add your dark mode styles by
+starting starting with "body.dark-mode" and add your class you want to
+target at the end. For example,
+
+body.dark-mode .heading-one {}
+
+then add your css properties like normal. That's it!
+Scroll to the bottom to start adding your dark mode styles
+
+*/
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
+/* note that Internet Explorer does not support css variables */
+:root {
+  --dark: #000;
+  --medium: #1b1b1b;
+  --light: #2e2e2e;
+}
+
+/* Begin adding your dark mode styles here, like so: */
+
+body.dark-mode #header {
+  background-color: var(--dark);
+}
+body.dark-mode #features {
+  background-color: var(--dark);
+}
+body.dark-mode #banner {
+  background-color: var(--dark);
+}
+body.dark-mode #main {
+  background-color: var(--dark);
+}
+body.dark-mode #footer {
+  background-color: var(--dark);
+}
