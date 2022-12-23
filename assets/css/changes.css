@@ -4,6 +4,13 @@
 4. Futura (sans-serif / geometric / functional) 
 5. Times New Roman ... ... no comment :D
 6. Helvetica (sans-serif / often used)  */
-body {
+/* body {
+  font-family: Futura;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Futura;
 }
