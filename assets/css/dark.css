@@ -31,8 +31,18 @@ Scroll to the bottom to start adding your dark mode styles
 
 /* Begin adding your dark mode styles here, like so: */
 
+body.dark-mode button#dark-mode-button,
+body.dark-mode a.button {
+  color: var(--light) !important;
+}
+
 body.dark-mode #header {
   background-color: var(--dark);
+}
+body.dark-mode #header > .container {
+  border-bottom: solid 2px crimson;
+  box-shadow: inset 0px -8px 0px 0px cornflowerblue,
+    inset 0px -10px 0px 0px crimson;
 }
 body.dark-mode #features {
   background-color: var(--dark);
@@ -40,9 +50,53 @@ body.dark-mode #features {
 body.dark-mode #banner {
   background-color: var(--dark);
 }
+
+body.dark-mode #banner {
+  border-top: solid 2px var(--light);
+  border-bottom: solid 2px var(--light);
+  box-shadow: inset 0px -8px 0px 0px cornflowerblue,
+    inset 0px 8px 0px 0px cornflowerblue;
+}
 body.dark-mode #main {
   background-color: var(--dark);
 }
+
+body.dark-mode #content > article {
+  border-top: solid 2px crimson;
+  box-shadow: inset 0px 8px 0px 0px cornflowerblue,
+    inset 0px 10px 0px 0px crimson;
+}
+
+body.dark-mode #content > article:first-child {
+  border-top: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
 body.dark-mode #footer {
-  background-color: var(--dark);
+  background-color: var(--light);
+}
+
+body.dark-mode #footer {
+  border-top: solid 2px crimson;
+}
+
+body.dark-mode #footer form input[type="text"],
+body.dark-mode #footer form input[type="email"],
+body.dark-mode #footer form input[type="password"],
+body.dark-mode #footer form select,
+body.dark-mode #footer form textarea {
+  background: #ccc;
+}
+body.dark-mode #footer form input[type="text"]:focus,
+body.dark-mode #footer form input[type="email"]:focus,
+body.dark-mode #footer form input[type="password"]:focus,
+body.dark-mode #footer form select:focus,
+body.dark-mode #footer form textarea:focus {
+  background: #eee;
+}
+
+body.dark-mode #copyright {
+  border-top: solid 2px crimson;
 }
