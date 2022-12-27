@@ -6,16 +6,21 @@ let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector(".dark-mode-button");
 const darkModeToggleFooter = document.querySelector("footer .dark-mode-button");
 
+// Dark mode change text
+const darkButton = document.querySelector("button#dark-mode-button");
+
 // Enable Dark Mode
 const enableDarkMode = () => {
   body.classList.add("dark-mode");
   localStorage.setItem("darkMode", "enabled");
+  darkButton.innerText = "Yagami";
 };
 
 // Disable Dark Mode
 const disableDarkMode = () => {
   body.classList.remove("dark-mode");
   localStorage.setItem("darkMode", null);
+  darkButton.innerText = "Dark";
 };
 
 if (darkMode == "enabled") {
