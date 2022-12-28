@@ -1,0 +1,7 @@
+@media screen and (max-width: 980px) {
+  #banner {
+    background: url("../../images/beef-farm.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
