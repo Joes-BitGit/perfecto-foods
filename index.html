@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/changes.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/features.css" />
     <link rel="stylesheet" href="assets/css/banner.css" />
     <link rel="stylesheet" href="assets/css/dark.css" />
   </head>
@@ -41,49 +42,52 @@
           <nav id="nav">
             <ul>
               <li>
-                <a class="" href="index.html"
-                  ><img
-                    src="images/Perfecto Foods Labels-v6.jpeg"
-                    alt="logo for perfecto foods inc"
-                    width="80"
-                    height="80"
-                /></a>
+                <a class="" href="index.html">
+                  <span>
+                    <img
+                      src="images/Perfecto Foods Labels-v6.jpeg"
+                      alt="logo for perfecto foods inc"
+                      width="72"
+                      height="78"
+                    />
+                  </span>
+                </a>
               </li>
               <li>
-                <a class="icon solid fa-home" href="index.html"
-                  ><span>Introduction</span></a
+                <a
+                  class="icon solid fa-home"
+                  href="#"
+                  onclick="scrollToHome()"
+                  data-stateName="home"
+                  ><span>Home</span></a
                 >
               </li>
               <li>
-                <a href="#" class="icon fa-chart-bar"><span>Dropdown</span></a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Magna phasellus</a></li>
-                  <li><a href="#">Etiam dolore nisl</a></li>
-                  <li>
-                    <a href="#">Phasellus consequat</a>
-                    <ul>
-                      <li><a href="#">Magna phasellus</a></li>
-                      <li><a href="#">Etiam dolore nisl</a></li>
-                      <li><a href="#">Phasellus consequat</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Veroeros feugiat</a></li>
-                </ul>
+                <a
+                  href="#"
+                  class="icon fa-chart-bar"
+                  onclick="scrollToSection('features')"
+                  data-stateName="features"
+                  ><span>Services</span></a
+                >
               </li>
+
               <li>
-                <a class="icon solid fa-cog" href="left-sidebar.html"
-                  ><span>Left Sidebar</span></a
+                <a
+                  class="icon solid fa-retweet"
+                  href="#"
+                  onclick="scrollToSection('main')"
+                  data-stateName="main"
+                  ><span>Gallery</span></a
                 >
               </li>
               <li>
-                <a class="icon solid fa-retweet" href="right-sidebar.html"
-                  ><span>Right Sidebar</span></a
-                >
-              </li>
-              <li>
-                <a class="icon solid fa-sitemap" href="no-sidebar.html"
-                  ><span>No Sidebar</span></a
+                <a
+                  class="icon solid fa-sitemap"
+                  href="#"
+                  onclick="scrollToSection('footer')"
+                  data-stateName="footer"
+                  ><span>Contact</span></a
                 >
               </li>
             </ul>
@@ -106,7 +110,7 @@
               <section>
                 <a href="#" class="image featured"
                   ><img
-                    src="images/2022-12-12/IMG_8742.jpg"
+                    src="images/2022-12-12/IMG_8911.jpg"
                     alt="skinning the chicken"
                 /></a>
                 <header>
@@ -158,7 +162,9 @@
             <div class="col-12">
               <ul class="actions">
                 <li>
-                  <a href="#footer" class="button icon solid fa-file"
+                  <a
+                    class="button icon solid fa-file"
+                    onclick="scrollToSection('footer')"
                     >Contact us for a quote</a
                   >
                 </li>
@@ -186,12 +192,12 @@
             <!-- Post -->
             <article class="box post">
               <header>
-                <h2>Behold! The <strong> japanese wagyu </strong></h2>
+                <h2>Operation</h2>
               </header>
               <span class="image featured image-limit"
                 ><img
-                  src="images/japanese-wagyu.jpg"
-                  alt="display japanese wagyu cuts"
+                  src="images/2022-12-20/IMG_9421.JPG"
+                  alt="wide angle working shot"
               /></span>
               <h3>And yeah, that's basically it</h3>
               <p>
@@ -218,7 +224,7 @@
                 </h2>
               </header>
               <a href="#" class="image featured image-limit"
-                ><img src="images/australian-wagyu.jpg" alt=""
+                ><img src="images/2022-12-12/IMG_8974.JPG" alt=""
               /></a>
               <h3>I mean isn't it possible?</h3>
               <p>
@@ -238,11 +244,13 @@
             <article class="box post">
               <header>
                 <h2>
-                  <a href="#">A Marbled <strong>Kobe Beef</strong></a>
+                  <a href="#">Boxes Stacked high with chicken</a>
                 </h2>
               </header>
               <a href="#" class="image featured"
-                ><img src="images/kobe.jpg" alt=""
+                ><img
+                  src="images/2022-12-20/IMG_9485.JPG"
+                  alt="hygenic operation"
               /></a>
               <h3>I mean isn't it possible?</h3>
               <p>
@@ -278,26 +286,17 @@
           <div class="row">
             <div class="col-6 col-12-medium">
               <section>
-                <form method="post" action="#">
-                  <div class="row gtr-50">
-                    <div class="col-6 col-12-small">
-                      <input name="name" placeholder="Name" type="text" />
-                    </div>
-                    <div class="col-6 col-12-small">
-                      <input name="email" placeholder="Email" type="text" />
-                    </div>
-                    <div class="col-12">
-                      <textarea name="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <a
-                        href="#"
-                        class="form-button-submit button icon solid fa-envelope"
-                        >Send Message</a
-                      >
-                    </div>
-                  </div>
-                </form>
+                <div class="col-12">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12024.302626943052!2d-118.20493053526184!3d33.97748373021558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf2543e34f27%3A0xca610f49fa62d868!2sPerfecto%20Foods%20Carniceria!5e0!3m2!1sen!2sus!4v1672263866857!5m2!1sen!2sus"
+                    style="border: 0"
+                    width="300"
+                    height="200"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </section>
             </div>
             <div class="col-6 col-12-medium">
@@ -314,23 +313,33 @@
                         Bell, CA 90201<br />
                         USA
                       </li>
-                      <li class="icon solid fa-phone">(000) 000-0000</li>
+                      <li class="icon solid fa-phone">(323) 484-9884</li>
                       <li class="icon solid fa-envelope">
-                        <a href="#">info@untitled.tld</a>
+                        <a href="mailto:perfectofoods@att.net"
+                          >perfectofoods@att.net</a
+                        >
                       </li>
                     </ul>
                   </div>
                   <div class="col-6 col-12-small">
                     <ul class="icons">
-                      <li class="icon brands fa-twitter">
-                        <a href="#">@untitled</a>
+                      <li class="icon brands fa-google">
+                        <a href="https://goo.gl/maps/xZQshf2MGc5YCYSh8"
+                          >Perfecto Foods Carniceria</a
+                        >
                       </li>
                       <li class="icon brands fa-instagram">
-                        <a href="#">instagram.com/untitled</a>
+                        <a
+                          href="https://www.instagram.com/perfectofoodscarniceria/"
+                          >instagram.com/perfectofoodscarniceria</a
+                        >
                       </li>
 
                       <li class="icon brands fa-facebook-f">
-                        <a href="#">facebook.com/untitled</a>
+                        <a
+                          href="https://www.facebook.com/PerfectoFoodsCarniceria"
+                          >facebook.com/PerfectoFoodsCarniceria</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -341,7 +350,7 @@
         </div>
         <div id="copyright" class="container">
           <ul class="links">
-            <li>&copy; Untitled. All rights reserved.</li>
+            <li>&copy; Joseph Almeida. All rights reserved.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>
@@ -356,5 +365,6 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="javascript/scroll.js"></script>
   </body>
 </html>
