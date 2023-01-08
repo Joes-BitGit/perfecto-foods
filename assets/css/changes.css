@@ -14,3 +14,11 @@
   box-sizing: border-box;
   font-family: Futura;
 }
+
+.image {
+  border: solid 4px #ed786a !important;
+}
+
+.image:hover {
+  opacity: 0.8;
+}

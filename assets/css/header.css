@@ -1,10 +1,48 @@
 nav#nav {
-  background-color: pink;
+  background-color: #fafafa;
   position: fixed;
   top: 0;
   z-index: 5;
+
+  box-shadow: 0 0.25em 0.25em 0 rgba(0, 0, 0, 0.25);
 }
 
 nav#nav > ul {
   margin-bottom: 0;
+}
+
+#nav > ul > li {
+  margin: 0;
+}
+
+#nav > ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav > ul > li {
+  font-size: 1.2em;
+}
+
+#perfecto-logo {
+  width: 48px;
+  height: 53px;
+}
+
+@media screen and (max-width: 980px) {
+  #titleBar .toggle:before {
+    background: #f0f0f0;
+    border-radius: 4px;
+
+    box-shadow: 0.2em 0.2em 0 0 rgba(0, 0, 0, 0.15);
+    left: 40px;
+    color: crimson;
+  }
+
+  #navPanel .link:hover {
+    color: crimson;
+    text-decoration: underline;
+  }
 }
